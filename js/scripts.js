@@ -52,3 +52,10 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+      // JavaScript to enable the automatic slideshow
+            $(document).ready(function(){
+                $('.carousel').carousel({
+                    interval: 500// Change this value to set the slideshow interval in milliseconds (e.g., 3000 = 3 seconds)
+                });
+            });
+     
