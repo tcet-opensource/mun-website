@@ -27,12 +27,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        
                         <li class="nav-item"><a class="nav-link" href="#committees">Committees</a></li>
                         <li class="nav-item"><a class="nav-link" href="#glimpse">glimpse</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" href="#Events">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        
                     </ul>
                 </div>
             </div>
@@ -365,6 +367,8 @@
     </section>
     <section class="bg-light py-5 text-center" id = "Events">
         <div class="container">
+            <div class="text-center">
+            <h2 class="section-heading text-uppercase">Events</h2>
             <h1 class="display-4">🌟 Join TCET MUN 2023! 🌟
             </h1>
             <p class="lead">Save the dates: October 6th, 7th, and 8th, 2023.</p>
@@ -451,13 +455,30 @@
                     <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
                 </form>
             </div>
-       
+              <!-- Convert JPGs to WebP -->
+<script type="text/javascript">
+    // Function to convert JPG images to WebP
+function convertJpgToWebp() {
+    const images = document.querySelectorAll('img[src$=".jpg"], img[src$=".jpeg"]');
+    images.forEach((img) => {
+        const webpSource = document.createElement('source');
+        webpSource.srcset = img.src.replace(/\.jpg|\.jpeg/g, '.webp');
+        webpSource.type = 'image/webp';
+        img.insertAdjacentElement('beforebegin', webpSource);
+    });
+}
+
+// Call the function when the page is loaded
+window.addEventListener('load', convertJpgToWebp);
+
+</script>
     
         <!-- Include Bootstrap JS and jQuery -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-            <!-- Footer-->
+            
+        <!-- Footer-->
             <footer class="footer py-4">
                 <div class="container">
                     <div class="row align-items-center">
